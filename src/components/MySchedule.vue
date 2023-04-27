@@ -32,6 +32,7 @@
 
 <script>
 export default {
+  name: 'MySchedule',
   props: {
     meetings: {
       type: Array,

@@ -25,8 +25,7 @@ export default {
             date: '2023-05-04',
             title: '晚餐討論'
           }
-        ],
-        droppable: true
+        ]
       },
       date: '',
       showModal: false,
@@ -92,7 +91,7 @@ export default {
     <FullCalendar :options="calendarOptions" ref="fullCalendar" v-else />
   </div>
   <div v-if="showModal">
-    <ModalItem @close="closeModal" @confirm="addToMeetings">
+    <ModalItem @close="closeModal">
       <template v-slot:header>新增會議</template>
       <template v-slot:date
         ><p>日期：{{ date }}</p>

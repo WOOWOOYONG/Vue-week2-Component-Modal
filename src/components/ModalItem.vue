@@ -21,7 +21,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'ModalItem'
+}
 </script>
 
 <style scoped>
