@@ -6,7 +6,7 @@
           <h3 class="modal-title">
             <slot name="header"></slot>
           </h3>
-          <button class="close" @click="closeModal">&times;</button>
+          <button class="close" @click="$emit('close')">&times;</button>
         </div>
         <div class="modal-body">
           <slot name="date"></slot>
@@ -21,16 +21,7 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {}
-  },
-  methods: {
-    closeModal() {
-      this.$emit('close')
-    }
-  }
-}
+export default {}
 </script>
 
 <style scoped>
