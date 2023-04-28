@@ -118,6 +118,10 @@ export default {
 </template>
 
 <style>
+.fc {
+  font-size: 1.1rem;
+}
+
 .fc-view-harness {
   cursor: pointer;
 }
