@@ -1,35 +1,16 @@
-# vue-week2-modal
+# Vue-Modal 元件作業
 
-This template should help get you started developing with Vue 3 in Vite.
+### 說明
 
-## Recommended IDE Setup
+- 練習自己寫 Modal 元件，在不同情境下顯示不同內容
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### 本次練習
 
-## Customize configuration
+- 元件拆分
+- 元件間的狀態管理
+- v-slot
+- props & emits
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Demo
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- [Github Pages](https://woowooyong.github.io/Vue-week2-Component-Modal/)
