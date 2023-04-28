@@ -115,4 +115,9 @@ export default {
   cursor: pointer;
   margin-right: 8px;
 }
+@media (prefers-color-scheme: dark) {
+  .modal-title {
+    color: #5d6163;
+  }
+}
 </style>
