@@ -11,8 +11,7 @@
         </li>
       </ul>
     </div>
-
-    <div v-if="showModal">
+    <template v-if="showModal">
       <ModalItem @close="closeModal">
         <template v-slot:header>會議內容</template>
         <template v-slot:date
@@ -26,7 +25,7 @@
           <button @click="closeModal" class="btn btn-confirm">確定</button>
         </template>
       </ModalItem>
-    </div>
+    </template>
   </div>
 </template>
 
@@ -34,16 +33,19 @@
 export default {
   name: 'MySchedule',
   props: {
+    revealModal: {
+      type: Boolean,
+      default: false
+    },
     meetings: {
       type: Array,
-      default: () => [],
       required: true
     }
   },
   data() {
     return {
       meetingData: [],
-      showModal: false,
+      showModal: this.revealModal,
       selectMeeting: {}
     }
   },
