@@ -16,6 +16,7 @@ export default {
         initialView: 'dayGridMonth',
         weekends: true,
         dateClick: this.handleDateClick,
+        aspectRatio: 2,
         events: [
           {
             date: '2023-05-02',
@@ -90,7 +91,7 @@ export default {
     <MySchedule :meetings="meetings" v-if="showMeetings" />
     <FullCalendar :options="calendarOptions" ref="fullCalendar" v-else />
   </div>
-  <div v-if="showModal">
+  <template v-if="showModal">
     <ModalItem @close="closeModal">
       <template v-slot:header>新增會議</template>
       <template v-slot:date
@@ -113,7 +114,7 @@ export default {
         <button class="btn btn-confirm" @click="addToMeetings">確定</button>
       </template>
     </ModalItem>
-  </div>
+  </template>
 </template>
 
 <style>

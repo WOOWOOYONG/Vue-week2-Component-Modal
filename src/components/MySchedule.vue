@@ -64,6 +64,7 @@ export default {
 h2 {
   font-size: 2rem;
   margin-bottom: 3rem;
+  font-weight: 600;
 }
 
 .meetingList {
@@ -85,6 +86,7 @@ h2 {
 .meetingList li p {
   margin: 0;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 .meetingList li button {
@@ -112,5 +114,14 @@ h2 {
 .btn-confirm:hover {
   background-color: #2b875f;
   transition: all 0.2s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .meetingList li {
+    color: #5d6163;
+  }
+  p {
+    color: #5d6163;
+  }
 }
 </style>
