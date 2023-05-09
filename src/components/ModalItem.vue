@@ -9,7 +9,6 @@
           <button class="close" @click="$emit('close')">&times;</button>
         </div>
         <div class="modal-body">
-          <slot name="date"></slot>
           <slot name="content"></slot>
         </div>
         <div class="modal-footer">

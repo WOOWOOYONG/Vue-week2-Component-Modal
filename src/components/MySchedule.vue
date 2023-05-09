@@ -14,10 +14,8 @@
     <template v-if="showModal">
       <ModalItem @close="closeModal">
         <template v-slot:header>會議內容</template>
-        <template v-slot:date
-          ><p>日期：{{ selectMeeting.day }}</p>
-        </template>
         <template v-slot:content>
+          <p>日期：{{ selectMeeting.day }}</p>
           <p>主旨：{{ selectMeeting.title }}</p>
           <p>事項：{{ selectMeeting.detail }}</p>
         </template>
